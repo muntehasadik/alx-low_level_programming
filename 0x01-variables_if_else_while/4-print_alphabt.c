@@ -9,14 +9,20 @@
 int main(void)
 
 {
-	char c;
+	int lw = 'a';
 
-	c = 'a';
-	while
-		(c <= 'z') {
-			if ((c != 'q' && c != 'e') && c <= 'z')
-				putchar(c);
-			c++;
-		}
-	putchar('\n');
-	return (0);
+	while (lw <= 'z')
+{
+	if (lw == 'e' || lw == 'q')
+{
+	lw += 1;
+	}
+else
+{
+	putchar(lw);
+	lw += 1;
+	}
+}
+putchar('\n');
+return (0);
+}
