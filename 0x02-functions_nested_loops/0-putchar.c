@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* int -putchar(char);
+* main - Entry point
 * is writen by me
 *
 * Return: Always 0 (Success)
