@@ -5,21 +5,23 @@
 * Description: computes and prints even  number < 4,000,000
 * 5 below 1024 (excluded), followed by a new line
 *
-* Return: 0
+* Return: nothing
 */
 
 int main(void)
 {
-	int a = 0, b = 1, next = 0;
-	int sum = 0;
+	int i = 0;
+	long j = 1, k = 2, sum = k;
 
-	while (next < 4000000)
+	while (k + j < 4000000)
 	{
-		next = a + b;
+		k += j;
 		a = b;
-		if (next % 2 == 0)
-			sum += next;
+		if (k % 2 == 0)
+			sum += k;
+		j = k - j;
+		++i;
 	}
-	printf("%i\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
